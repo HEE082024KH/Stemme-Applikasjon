@@ -12,5 +12,6 @@ class Election
     }
     options = new List<ElectionOption>();
     castVotes = new List<Vote>();
+    id = Guid.NewGuid();
   }
 }
