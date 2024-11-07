@@ -2,10 +2,12 @@ class VotingService
 {
   public Election AddNewElection()
   {
-    var somethingName = new List<ElectionOption>
+    var hardcodedOptions = new List<ElectionOption>
     {
-      new ElectionOption("");
-    }
-    Election newElection = new Election();
+      new ElectionOption("Høyre"),
+      new ElectionOption("Frp"),
+    };
+    Election newElection = new Election(hardcodedOptions);
+    return newElection;
   }
 }

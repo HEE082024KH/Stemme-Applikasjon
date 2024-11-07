@@ -1,8 +1,8 @@
 class Election
 {
   public Guid id { get; set; }
-  public required List<ElectionOption> options;
-  public required List<Vote> castVotes;
+  public List<ElectionOption> options;
+  public List<Vote> castVotes;
 
   public Election(List<ElectionOption> electionOptions)
   {

@@ -1,7 +1,7 @@
 class ElectionOption
 {
   Guid id;
-  string? name;
+  public string? name;
 
   public ElectionOption(string name)
   {
