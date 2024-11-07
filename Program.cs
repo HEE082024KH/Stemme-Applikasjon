@@ -7,7 +7,7 @@ app.MapGet("/health", () => "Server OK!");
 app.MapPost("/valg", () =>
 {
   Election newElection = votingService.AddNewElection();
-  return Results.CreatedAtRoute($"/valg{newElection.id}");
+  return Results.Ok(new { id = $"/valg{newElection.id}" });
 });
 
 app.Run();
